@@ -7,7 +7,7 @@ public class Evento {
 	protected Calendar fecha;
 
 	public boolean mismoTiempoEnFecha(Calendar fecha) {
-		return this.fecha.equals(fecha);
+		return false;
 	}
 
 	public boolean esMismo(Evento unEvento) {

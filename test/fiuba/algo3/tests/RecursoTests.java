@@ -7,7 +7,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import fiuba.algo3.modelo.Recurso;
-import fiuba.algo3.modelo.Evento;
+import fiuba.algo3.modelo.EventoSimple;
 import fiuba.algo3.modelo.RecursoOcupadoException;
 import java.util.Calendar;
 
@@ -28,8 +28,9 @@ public class RecursoTests {
 		fecha.set(Calendar.YEAR, 2016);
 		fecha.set(Calendar.MONTH, 6);
 		fecha.set(Calendar.DAY_OF_MONTH, 2);
+		fecha.set(Calendar.HOUR_OF_DAY, 10);
 
-		Evento unEvento = new Evento();
+		EventoSimple unEvento = new EventoSimple();
 		unEvento.setNombre("Estudiar algebra");
 		unEvento.setFecha(fecha);
 
@@ -46,7 +47,9 @@ public class RecursoTests {
 		fecha.set(Calendar.YEAR, 2016);
 		fecha.set(Calendar.MONTH, 6);
 		fecha.set(Calendar.DAY_OF_MONTH, 2);
-		Evento unEvento = new Evento();
+		fecha.set(Calendar.HOUR_OF_DAY, 10);
+
+		EventoSimple unEvento = new EventoSimple();
 		unEvento.setNombre("Estudiar algebra");
 		unEvento.setFecha(fecha);
 
@@ -63,8 +66,9 @@ public class RecursoTests {
 		fecha.set(Calendar.YEAR, 2016);
 		fecha.set(Calendar.MONTH, 6);
 		fecha.set(Calendar.DAY_OF_MONTH, 2);
+		fecha.set(Calendar.HOUR_OF_DAY, 10);
 
-		Evento unEvento = new Evento();
+		EventoSimple unEvento = new EventoSimple();
 		unEvento.setNombre("Estudiar algebra");
 		unEvento.setFecha(fecha);
 
@@ -74,7 +78,7 @@ public class RecursoTests {
 
 		Assert.assertTrue(unRecurso.existeEvento(unEvento));
 
-		Evento otroEvento = new Evento();
+		EventoSimple otroEvento = new EventoSimple();
 		otroEvento.setNombre("Jugar Plaza");
 		otroEvento.setFecha(fecha);
 

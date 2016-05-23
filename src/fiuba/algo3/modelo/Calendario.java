@@ -41,8 +41,7 @@ public class Calendario {
 		fecha.set(Calendar.YEAR, unAnio);
 		fecha.set(Calendar.MONTH, unMes);
 		fecha.set(Calendar.DAY_OF_MONTH, unDia);
-		fecha.set(Calendar.DAY_OF_MONTH, unDia);
-		fecha.set(Calendar.HOUR, unaHora);
+		fecha.set(Calendar.HOUR_OF_DAY, unaHora);
 
 		EventoSimple unEvento = new EventoSimple();
 		unEvento.setNombre(unNombre);
@@ -67,8 +66,7 @@ public class Calendario {
 		fecha.set(Calendar.YEAR, unAnio);
 		fecha.set(Calendar.MONTH, unMes);
 		fecha.set(Calendar.DAY_OF_MONTH, unDia);
-		fecha.set(Calendar.DAY_OF_MONTH, unDia);
-		fecha.set(Calendar.HOUR, unaHora);
+		fecha.set(Calendar.HOUR_OF_DAY, unaHora);
 
 		EventoSemanal unEvento = new EventoSemanal();
 		unEvento.setNombre(unNombre);
@@ -95,7 +93,7 @@ public class Calendario {
 		fecha.set(Calendar.MONTH, unMes);
 		fecha.set(Calendar.DAY_OF_MONTH, unDia);
 		fecha.set(Calendar.DAY_OF_MONTH, unDia);
-		fecha.set(Calendar.HOUR, unaHora);
+		fecha.set(Calendar.HOUR_OF_DAY, unaHora);
 
 		for (Persona persona: this.personas){
 			if(persona.getNombre() == unNombre){

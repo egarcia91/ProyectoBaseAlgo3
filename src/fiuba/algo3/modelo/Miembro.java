@@ -25,7 +25,6 @@ public class Miembro {
 	}
 
 	public void agregarEvento(Evento unEvento) {
-		this.eventos.add(unEvento);
 	}
 
 	public boolean estaOcupadoEnFecha(Calendar unaFecha) {
